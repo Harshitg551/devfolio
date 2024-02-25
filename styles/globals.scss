@@ -806,3 +806,16 @@ $bg: #f4faff;
 #mouth-frown {
   visibility: hidden;
 }
+
+.talk-button {
+  background-color: purple; /* Set your desired button background color */
+  color: white; /* Set your desired text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove default button border */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease; /* Add a smooth transition for the box shadow */
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(112, 0, 255, 0.5); /* Set your desired purple shadow color and size */
+  }
+}

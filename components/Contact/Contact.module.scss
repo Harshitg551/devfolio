@@ -71,7 +71,7 @@
   &:active {
     background-position: 98%;
     color: #fff;
-    box-shadow: 0 0 1rem theme("colors.indigo.dark");
+    box-shadow: 0 0 1rem theme("colors.indigo.dark"), 0 0 1rem #9f55ff; // Add the shadow here
   }
 
   .plane,

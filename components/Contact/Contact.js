@@ -69,11 +69,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, email, message } = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    };
+    const { name, email, message } = formData;
 
     if (name === "" || email === "" || message === "") {
       empty();
@@ -81,6 +77,8 @@ const Contact = () => {
     }
 
     setIsSending(true);
+    
+    // Use the mail function to send the email
     mail({ name, email, message })
       .then((res) => {
         if (res.status === 200) {
@@ -347,23 +345,24 @@ const Contact = () => {
         </div>
       </div>
       <style jsx global>{`
-        input,
-        label,
-        textarea {
-          cursor: none;
-        }
+  input,
+  textarea {
+    cursor: none;
+    box-shadow: 0 0 10px rgba(159, 85, 255, 0.5); // Initial box-shadow
+    transition: box-shadow 0.3s ease-in-out; // Add a transition for smooth animation
+  }
 
-        input:hover,
-        textarea:hover {
-          box-shadow: 0 0 0.3rem #7000ff;
-        }
+  input:hover,
+  textarea:hover {
+    box-shadow: 0 0 30px rgba(159, 85, 255, 0.7); // Increased distance on hover
+  }
 
-        input:active,
-        input:focus,
-        textarea:active,
-        textarea:focus {
-          box-shadow: 0 0 0.3rem #120e16;
-        }
+  input:active,
+  input:focus,
+  textarea:active,
+  textarea:focus {
+    box-shadow: 0 0 30px rgba(18, 14, 22, 0.8); // Increased distance on focus
+  }
 
         input:focus + label,
         input:valid + label {

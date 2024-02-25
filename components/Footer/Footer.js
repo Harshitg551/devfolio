@@ -54,10 +54,15 @@ const Footer = () => {
                 href={`#${MENULINKS[4].ref}`}
                 classes="link"
                 type="secondary"
+                style={{
+                  boxShadow: "0 100px 120px rgba(139, 49, 255, 0.2)", // Adjust values as needed
+                  transition: "box-shadow 0.3s",
+                }}
               >
                 Let&apos;s Talk
               </Button>
             </div>
+            
             <p className="text-center text-white text-sm sm:text-base font-medium tracking-wide mt-8">
               Developed with{" "}
               <button onClick={handleClick} className="link heart-btn">
@@ -65,7 +70,7 @@ const Footer = () => {
                   ❤️
                 </span>
               </button>{" "}
-              by <span className="text-white">Shubh Porwal</span>
+              by <span className="text-white">Harshit Gupta</span>
             </p>
           </div>
         </div>

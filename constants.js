@@ -1,12 +1,12 @@
 export const METADATA = {
-  author: "Shubh Porwal",
-  title: "Portfolio | Shubh Porwal",
+  author: "Harshit Gupta",
+  title: "Portfolio | Harshit Gupta",
   description:
     "Shubh Porwal is a Frontend Developer from Kuwait, interested in crafting beautiful and functional applications.",
-  siteUrl: "https://www.shubhporwal.me/",
-  twitterHandle: "@shubh731",
+  siteUrl: "https://www.HarshitGupta.me/",
+  twitterHandle: "@HARSHIT46277299",
   keywords: [
-    "Shubh Porwal",
+    "Harshit Gupta",
     "Frontend Developer",
     "Web Developer",
     "React Native Developer",
@@ -53,23 +53,23 @@ export const TYPED_STRINGS = [
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: shubhporwal73@gmail.com",
+    url: "mailto: harshitg551@gmail.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shubhporwal/",
+    url: "https://www.linkedin.com/in/harshit-gupta-ba49321a9/",
   },
   {
     name: "github",
-    url: "https://github.com/shubh73",
+    url: "https://github.com/Harshitg551",
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/shubhii73/",
+    url: "https://www.instagram.com/creativee_harshit/",
   },
   {
     name: "twitter",
-    url: "https://twitter.com/shubh731",
+    url: "https://twitter.com/HARSHIT46277299",
   },
 ];
 
@@ -122,7 +122,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/airbnb-blur.webp",
     description: "Airbnb UI clone using NextJS + Tailwind CSS 🛏️",
     gradient: ["#F14658", "#DC2537"],
-    url: "https://shubh73-airbnb.vercel.app/",
+    url: "https://airbnb-harshitg551.vercel.app/  ",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
@@ -131,7 +131,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/medium-blur.webp",
     description: "Medium UI clone using NextJS + Tailwind CSS ✍🏻",
     gradient: ["#FFA62E", "#EA4D2C"],
-    url: "https://shubh73-medium.vercel.app/",
+    url: "https://github.com/Harshitg551/medium1",
     tech: ["typescript", "react", "nextjs", "tailwindcss", "sanity.io"],
   },
   {
@@ -141,7 +141,7 @@ export const PROJECTS = [
     description:
       "Conversational Voice Controlled React News Application using Alan AI 🎙",
     gradient: ["#000066", "#6699FF"],
-    url: "https://shubh73-inshorts.netlify.app/",
+    url: "",
     tech: ["react", "chakra-ui", "alan"],
   },
   {
@@ -150,7 +150,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/tesla-blur.webp",
     description: "A Tesla React Native App 🏎️",
     gradient: ["#142D46", "#2E4964"],
-    url: "https://github.com/shubh73/tesla",
+    url: "",
     tech: ["react"],
   },
 ];
@@ -158,7 +158,7 @@ export const PROJECTS = [
 export const WORK = [
   {
     id: 1,
-    company: "Dukaan",
+    company: "Coding Ninjas",
     title: "Frontend Developer",
     location: "Bangalore, Karnataka",
     range: "December - Current",
@@ -168,11 +168,11 @@ export const WORK = [
       "The app boasts a DAU base of 13k and an extensive MAU count of 170k.",
     ],
     url: "https://mydukaan.io/",
-    video: "/work/dukaan.mp4",
+    video: "/work/Codingv2.mp4",
   },
   {
     id: 2,
-    company: "Aviate",
+    company: "Microsoft ",
     title: "Frontend Developer Intern",
     location: "Goa",
     range: "May - October 2022",
@@ -182,11 +182,11 @@ export const WORK = [
       "Successfully rolled out an error-logging and bug reporting system that cut user-reported bugs by 30%.",
     ],
     url: "https://www.aviate.jobs/",
-    video: "/work/aviate.mp4",
+    video: "/work/microsoft.mp4",
   },
   {
     id: 3,
-    company: "Spacenos",
+    company: "DevTown",
     title: "Web Developer Intern",
     location: "Bangalore, Karnataka",
     range: "September - December 2021",
@@ -196,7 +196,35 @@ export const WORK = [
       "Implemented CRUD features for all the services and providers.",
     ],
     url: "https://spacenos.com/",
-    video: "/work/spacenos.mp4",
+    video: "/work/devtown.mp4",
+  },
+  {
+    id: 4,
+    company: "INFOTRIXS",
+    title: "Web Developer Intern",
+    location: "Bangalore, Karnataka",
+    range: "September - December 2021",
+    responsibilities: [
+      "Led the Full Stack revamp on the Admin Portal.",
+      "Developed app integration with REST APIs, Google Maps, User Auth, Stripe and other libraries.",
+      "Implemented CRUD features for all the services and providers.",
+    ],
+    url: "https://spacenos.com/",
+    video: "/work/Infotrixs.mp4",
+  },
+  {
+    id: 5,
+    company: "IBM",
+    title: "Web Developer Intern",
+    location: "Bangalore, Karnataka",
+    range: "September - December 2021",
+    responsibilities: [
+      "Led the Full Stack revamp on the Admin Portal.",
+      "Developed app integration with REST APIs, Google Maps, User Auth, Stripe and other libraries.",
+      "Implemented CRUD features for all the services and providers.",
+    ],
+    url: "https://spacenos.com/",
+    video: "/work/IBM.mp4",
   },
 ];
 

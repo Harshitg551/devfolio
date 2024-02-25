@@ -2,6 +2,19 @@
   animation: fadeAppear 1s 0.2s;
 }
 
+.buttonWrapper {
+  position: relative;
+
+  &:hover {
+    .hoverEffect {
+      box-shadow: 0 0 20px 5px rgba(128, 0, 128, 0.8); // Adjust the values as needed
+    }
+  }
+}
+
+.hoverEffect {
+  transition: box-shadow 0.3s ease-in-out;
+}
 .heroName{
     line-height: 1.5em;
     animation: fadeAppear 1.3s 0.3s;

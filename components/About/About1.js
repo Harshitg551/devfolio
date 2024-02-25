@@ -30,7 +30,40 @@ const About1 = ({ clientHeight }) => {
       .to(quoteRef.current.querySelector(".about-2"), {
         opacity: 0.2,
         delay: 1,
+      })
+      .fromTo(
+        quoteRef.current.querySelector(".about-3"),
+        { opacity: 0.2 },
+        { opacity: 1 },
+        "<"
+      )
+      .to(quoteRef.current.querySelector(".about-3"), {
+        opacity: 0.2,
+        delay: 1,
       });
+
+    // Animation to change color of the specified text
+    gsap.to(quoteRef.current.querySelector(".about-5"), {
+      color: "transparent",
+      scrollTrigger: {
+        trigger: targetSection.current,
+        start: "center 80%",
+        end: "center top",
+        scrub: 0,
+      },
+    });
+
+    // Additional animation for the specified line
+    gsap.to(quoteRef.current.querySelector(".about-5"), {
+      color: "#4b0082",
+      opacity: 1,  // Set the final opacity value
+      scrollTrigger: {
+        trigger: targetSection.current,
+        start: "center 80%",
+        end: "center top",
+        scrub: 0,
+      },
+    });
 
     ScrollTrigger.create({
       trigger: targetSection.current,
@@ -50,15 +83,20 @@ const About1 = ({ clientHeight }) => {
       >
         <h1
           ref={quoteRef}
-          className="font-medium text-[2.70rem] md:text-6xl lg:text-[4rem] text-center"
+          className="font-medium text-[1.10rem] md:text-6xl lg:text-[4rem] text-center"
         >
           <span className="about-1 leading-tight">
-            I&apos;m a passionate Engineer who&apos;s focused on building
-            scalable and performant apps.{" "}
+            Driven{" "}
+            <span className="about-5 font-bold">
+              C.E. student currently pursuing an MBA in Technology at NMIMS{" "}
+            </span>{" "}
+            with a keen focus on specializing in finance.{" "}
           </span>
           <span className="about-2 leading-tight">
-            I take responsibility to craft a good user experience using modern
-            frontend architecture.{" "}
+            Enthusiastic about leveraging a robust tech background to drive strategic financial initiatives.{" "}
+          </span>
+          <span className="about-3 leading-tight">
+            Passionate learner committed to bridging the gap between technology and finance for innovative solutions.
           </span>
         </h1>
       </div>

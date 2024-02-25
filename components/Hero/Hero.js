@@ -5,8 +5,11 @@ import { MENULINKS, TYPED_STRINGS } from "../../constants";
 import styles from "./Hero.module.scss";
 import Button from "../Button/Button";
 import Profiles from "../Profiles/Profiles";
+import buttonStyles from "../Button/Button.module.scss"; // Import the styles
 // import lottie from "lottie-web";
 
+const YourComponent = () => {
+  const megaLink = "https://mega.nz/file/hklEASZC#SO3PKKXLtALm4pZ-r2uML9rqNrcg3bfcXbBUqPHfEOk"};
 const Hero = () => {
   const [lottie, setLottie] = useState();
 
@@ -35,6 +38,7 @@ const Hero = () => {
         "<"
       );
 
+      
     return () => typed.destroy();
   }, [typedEl, targetSection]);
 
@@ -87,8 +91,8 @@ const Hero = () => {
           Hi, my name is
         </h5>
         <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
-          <span className={`relative ${styles.emphasize} seq`}>Shubh</span>
-          <span className="seq"> Porwal</span>
+          <span className={`relative ${styles.emphasize} seq`}>Harshit</span>
+          <span className="seq"> Gupta</span>
         </h1>
         <p>
           <span
@@ -100,10 +104,26 @@ const Hero = () => {
           <Profiles />
         </div>
         <div className="seq pt-4">
-          <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
+        <div className={buttonStyles.buttonWrapper}>
+          <Button
+            href={`#${MENULINKS[4].ref}`}
+            classes={`link ${buttonStyles.hoverEffect}`} // Apply hover effect class
+            type="primary"
+          >
             Let&apos;s Talk
           </Button>
         </div>
+        </div>
+        <div className="seq pt-4">
+        <div className={buttonStyles.buttonWrapper}>
+        <a href="https://mega.nz/file/hklEASZC#SO3PKKXLtALm4pZ-r2uML9rqNrcg3bfcXbBUqPHfEOk" target="_blank" rel="noopener noreferrer">
+            <Button classes={`link ${buttonStyles.hoverEffect}`} type="primary">
+              Download Resume
+            </Button>
+        </a>
+
+        </div>
+      </div>
       </div>
       <div
         className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
