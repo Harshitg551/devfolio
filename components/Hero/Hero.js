@@ -77,7 +77,7 @@ const Hero = () => {
       id={MENULINKS[0].ref}
       style={{ opacity: 0 }}
     >
-      <style global jsx>
+      <style >
         {`
           .typed-cursor {
             font-size: 2rem;

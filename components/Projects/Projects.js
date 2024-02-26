@@ -118,7 +118,7 @@ const Projects = ({ isDesktop, clientHeight }) => {
           ))}
         </div>
       </div>
-      <style jsx global>{`
+      <style >{`
         .project-wrapper::-webkit-scrollbar {
           display: none;
         }

@@ -42,7 +42,7 @@ const About2 = ({ clientHeight }) => {
           for attention to detail.
         </h1>
       </div>
-      <style jsx global>{`
+      <style  >{`
         .about-3 {
           background: linear-gradient(
             90deg,
